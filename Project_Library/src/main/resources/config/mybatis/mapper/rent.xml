@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="rent">
+	
+	<!-- 1. 관리자 -->
+	<!-- <3>주문 관리 =============================================================== -->
+	<!-- 대여 주문조회 -->
+	<select id="admin_rent_list" resultType="rent">
+		select * from rent
+	</select>
+	<!-- 도서 대여 -->
+	<update id="admin_rent_rent" parameterType="int">
+		update rent set rent_Check='1' where rent_idx=#{rent_idx}
+	</update>
+	<!-- 도서 취소 -->
+	<update id="admin_rent_cancel" parameterType="int">
+		update rent set rent_Cancel='1' where rent_idx=#{rent_idx}
+	</update>
+	<!-- 도서 반납 -->
+	<update id="admin_rent_ret" parameterType="int">
+		update rent set rent_Check='0' where rent_idx=#{rent_idx}
+	</update>
+
+	<!-- 2. 유저 -->
+	<!-- <1>책 정보 =============================================================== -->
+	<!-- 선택도서 예약................................................. -->
+	<insert id="rentbook_reserve" parameterType="rent">
+		insert into rent values(
+			seq_rent_idx.nextval,
+			#{userID},
+			#{rentbook_Isbn},
+			#{rentbook_Name},
+			'2',
+			#{rent_Date},
+			#{rent_Redate},
+			'2'
+		)
+	</insert>
+	
+	<!-- <2>마이페이지 =============================================================== -->
+	<!-- 선택도서 예약................................................. -->
+	<select id="user_rent_search" parameterType="String" resultType="rent">
+		select * from (select rank() over(order by RENT_IDX desc) no, d.* from
+		(select * from rent where userID=#{userID}) d) 
+	</select>
+	<!-- 선택 대여한 책 대여 취소버튼 -->
+	<update id="user_rent_ccl" parameterType="int">
+		update rent set rent_Cancel='3' where rent_idx=#{rent_idx}
+	</update>
+	
+ </mapper>

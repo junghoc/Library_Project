@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	
+	<!-- <0>공통사항 =============================================================== -->
+	<!-- 1.로그인................................................. -->
+	<!-- 로긴 아디확인 -->
+	<select id="login_check" parameterType="String" resultType="user">
+		select * from users where userID=#{userID} and enabled = '1'
+	</select>
+	<!-- 아이디 찾기 -->
+	<select id="id_find" parameterType="user" resultType="user">
+		select * from users where userName=#{userName} and  
+				email1=#{email1} and email2=#{email2} and enabled = '1'
+	</select>
+	<!-- 비밀번호 찾기 -->
+	<select id="pwd_find" parameterType="user" resultType="user">
+		select * from users where userID=#{userID} and  
+				email1=#{email1} and email2=#{email2} and enabled = '1'
+	</select>
+	<!-- 비밀번호 변경 -->
+	<update id="pwd_change" parameterType="user">
+		update users set userPWD=#{userPWD}
+				where userID=#{userID} and email1=#{email1} and email2=#{email2}
+	</update>
+	
+	<!-- 2.회원가입................................................. -->
+	<!-- 아이디 중복체크 -->
+	<select id="id_check" parameterType="String" resultType="user">
+		select * from users where userID=#{userID}
+	</select>
+	<!-- 회원가입 -->
+	<insert id="user_insert" parameterType="user">
+		insert into users values(
+			#{userID},
+			#{userPWD},
+			#{jumin1},
+			#{jumin2},
+			#{address1},
+			#{address2},
+			#{address3},
+			#{gender},
+			#{userName},
+			#{tel},
+			#{email1},
+			#{email2},
+			sysdate,
+			#{key},
+			'1',
+			'ROLE_USER',
+			(TRUNC(MONTHS_BETWEEN(TRUNC(SYSDATE), 
+			TO_DATE(#{jumin1},'YYYYMMDD')) / 12))
+		)
+	</insert>
+	<!-- 유저번호 중복확인 -->
+	<select id="key_check" parameterType="String" resultType="user">
+		select * from users where key=#{key}
+	</select>
+	
+	
+ </mapper>

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Titillium+Web:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'FontAwesome';font-weight:normal;font-style: normal;
+  src: url('../font/fa-solid-900.eot');
+  src: url('../font/fa-solid-900.eot?#iefix') format('eot'), 
+		url('../font/fa-solid-900.woff') format('woff'), 
+		url('../font/fa-solid-900.ttf') format('truetype'), 
+		url('../font/fa-solid-900.svg#FontAwesome') format('svg');
+}
+@font-face {
+  font-family: 'FontAwesome';font-weight: 400;font-style: normal;
+  src: url('../font/fa-regular-400.eot');
+  src: url('../font/fa-regular-400.eot?#iefix') format('eot'), 
+		url('../font/fa-regular-400.woff') format('woff'), 
+		url('../font/fa-regular-400.ttf') format('truetype'), 
+		url('../font/fa-regular-400.svg#FontAwesome') format('svg');
+}
+@font-face {
+  font-family: 'FontAwesome';font-weight: normal;font-style: normal;
+  src: url('../font/fa-brands-400.eot');
+  src: url('../font/fa-brands-400.eot?#iefix') format('eot'), 
+		url('../font/fa-brands-400.woff') format('woff'), 
+		url('../font/fa-brands-400.ttf') format('truetype'), 
+		url('../font/fa-brands-400.svg#FontAwesome') format('svg');
+}

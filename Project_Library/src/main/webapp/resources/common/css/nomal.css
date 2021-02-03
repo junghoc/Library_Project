@@ -1,0 +1,410 @@
+body {
+    font-family: 'Titillium Web','Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: #555;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, menu, nav, section, article, aside, dl, dt, dd, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption, em, i {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    padding: 40px 0 60px 0;
+    z-index: 9;
+}
+
+main, header, section, nav, footer, aside, article, figure {
+    display: block;
+}
+
+.d_width {
+    position: relative;
+    width: 840px;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+}
+
+.clear:after, .clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+}
+
+#content {
+    float: left;
+    width: 100%;
+    min-height: 760px;
+}
+
+.join-wrap2 .btn-wrap {
+    background: #fff;
+    margin: 0 -10px;
+}
+
+.tac, table.tac thead th, table.tac tbody th, table.tac tbody td {
+    text-align: center !important;
+}
+
+.col_d2 {
+    float: left;
+    width: 100%;
+}
+
+.join-wrap2 .bx {
+    background: #f7f7f7;
+    min-height: 240px;
+}
+
+.col_d2 .bx, .col_d3 .bx, .col_d4 .bx, .col_d5 .bx, .col_w1 .bx, .col_w2 .bx, .col_w3 .bx, .col_w4 .bx, .col_w5 .bx, .col_w6 .bx, .col_w7 .bx, .col_w8 .bx, .col_w9 .bx {
+    margin: 10px;
+}
+
+a {
+    transition: all ease-out 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: #525252;
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.join-wrap2 .btn-wrap .tit {
+    font-size: 20px;
+    font-weight: 500;
+    background: linear-gradient(90deg,#66C9B3,#4690DF);
+    color: #fff;
+    line-height: 80px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.join-wrap2 .btn-wrap .tit2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 30px 0 10px 0;
+}
+
+.join-wrap2 .btn-wrap .txt {
+    padding-bottom: 30px;
+}
+
+.bg_gr {
+    padding: 30px;
+    background: #f5f5f5;
+}
+
+.mtp10 {
+    margin-top: 10px !important;
+}
+
+.mtp10 {
+    margin-top: 10px !important;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul.bu li {
+    position: relative;
+    padding-left: 10px;
+}
+
+ul li {
+    padding: 2px 0;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul.bu > li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.8em;
+    display: block;
+    width: 3px;
+    height: 3px;
+    background: #5A6378;
+    margin: 0;
+}
+
+#body_content h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin: 1.5rem 0 0.8rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#body_content h3:before {
+    content: "";
+    margin: -2px 10px 0 0;
+    display: inline-block;
+    width: 10px;
+    height: 3px;
+    background: #65C7B3;
+    vertical-align: middle;
+}
+
+.t3 {
+    border-top: 2px solid #ccc;
+}
+
+.mtp10 {
+    margin-top: 10px !important;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+table caption {
+    text-indent: -100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-shadow: none;
+    color: transparent;
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.t3 tbody {
+    background: #fff;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.t3 tbody tr:first-child th, .t3 tbody tr:first-child td {
+    border-top: none;
+}
+
+.t3 tbody th, .t3 tbody td:first-child {
+    border-left: none;
+}
+
+.t3 tbody th, .t3 tbody td {
+    border: 1px solid #EBEBEB;
+}
+
+.t3 tbody th {
+    background: #f9f9f9;
+}
+
+.t3 th, .t3 td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    vertical-align: middle;
+    color: #333;
+}
+
+.t3 th {
+    text-align: center;
+}
+
+table th {
+    font-weight: normal;
+}
+
+.t3 tbody td:last-child {
+    border-right: none;
+}
+
+.find-wrap {
+	width:1000px;
+    padding: 80px;
+    padding-top: 40px;
+}
+
+.find-wrap > .tit {
+    font-size: 40px;
+    color: #333;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+.find-wrap > .txt {
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+.find-wrap > .txt span {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.find-wrap .btn-wrap {
+    background: #fff;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.find-wrap .btn-wrap .col_d2 {
+    padding: 0 30px;
+}
+
+.find-wrap .btn-wrap .tit {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit !important;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+input[type="hidden" i] {
+    display: none;
+    appearance: initial;
+    background-color: initial;
+    cursor: default;
+    padding: initial;
+    border: initial;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.find-wrap .btn-wrap a.btn-d {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 20px 0;
+    background: #FFCC66;
+    border: none;
+    color: #333 !important;
+}
+
+.btn-d {
+    transition: all 0.2s ease-out;
+    cursor: pointer !important;
+    line-height: 38px;
+    vertical-align: middle;
+}

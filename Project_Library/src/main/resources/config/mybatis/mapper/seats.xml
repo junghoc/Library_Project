@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="seats">
+	
+	<!-- <1>관리자 =============================================================== -->
+	<!-- 5.열람실................................................. -->
+	<!-- 열람실 리스트 전부 가져오기 -->
+	<select id="admin_seats_list" resultType="seats">
+		select * from seats
+	</select>
+	<!-- 열람실 초기화(전부다 빈자리로 만들기) -->
+	<update id="admin_study_room_reset">
+		update seats set t1_user_id = null, t2_user_id = null, t3_user_id = null
+	</update>
+	
+	<!-- <2>유저 =============================================================== -->
+	<!-- 5.열람실................................................. -->
+	<!-- 1번시간 선택 유저의 아이디로 검색 -->
+	<select id="my_study_room_t1" parameterType="String" resultType="seats">
+		select * from seats where t1_user_id=#{userID}
+	</select>
+	<!-- 2번시간 선택 유저의 아이디로 검색 -->
+	<select id="my_study_room_t2" parameterType="String" resultType="seats">
+		select * from seats where t2_user_id=#{userID}
+	</select>
+	<!-- 3번시간 선택 유저의 아이디로 검색 -->
+	<select id="my_study_room_t3" parameterType="String" resultType="seats">
+		select * from seats where t3_user_id=#{userID}
+	</select>
+	<!-- 회원의 1번 시간 예약 취소하기 -->
+	<update id="my_study_room_cancel1" parameterType="java.util.HashMap">
+		update seats set t1_user_id = null where t1_user_id=#{userID} and seats_idx=#{seats_idx}
+	</update>
+	<!-- 회원의 2번 시간 예약 취소하기 -->
+	<update id="my_study_room_cancel2" parameterType="java.util.HashMap">
+		update seats set t2_user_id = null where t2_user_id=#{userID} and seats_idx=#{seats_idx}
+	</update>
+	<!-- 회원의 3번 시간 예약 취소하기 -->
+	<update id="my_study_room_cancel3" parameterType="java.util.HashMap">
+		update seats set t3_user_id = null where t3_user_id=#{userID} and seats_idx=#{seats_idx}
+	</update>
+	<!-- 멀리미디어실 리스트 가져오기 -->
+	<select id="room_select_mult" resultType="seats">
+		select * from seats where seats_idx >= 1 and 24 >= seats_idx
+	</select>
+	<!-- 멀티미디어실 1번시간 사용가능한 죄석 -->
+	<select id="mult_use_count1" resultType="int">
+		select count(*) from seats where t1_user_id is not null and seats_idx >= 1 and 24 >= seats_idx
+	</select>
+	<!-- 멀티미디어실 2번시간 사용가능한 죄석 -->
+	<select id="mult_use_count2" resultType="int">
+		select count(*) from seats where t2_user_id is not null and seats_idx >= 1 and 24 >= seats_idx
+	</select>
+	<!-- 멀티미디어실 3번시간 사용가능한 죄석 -->
+	<select id="mult_use_count3" resultType="int">
+		select count(*) from seats where t3_user_id is not null and seats_idx >= 1 and 24 >= seats_idx
+	</select>
+	<!-- 열람실실 리스트 가져오기 -->
+	<select id="room_select_read" resultType="seats">
+		select * from seats where seats_idx >= 25 and 66 >= seats_idx
+	</select>
+		<!-- 열람실 1번시간 사용가능한 죄석 -->
+	<select id="read_use_count1" resultType="int">
+		select count(*) from seats where t1_user_id is not null and seats_idx >= 25 and 66 >= seats_idx
+	</select>
+	<!-- 열람실 2번시간 사용가능한 죄석 -->
+	<select id="read_use_count2" resultType="int">
+		select count(*) from seats where t2_user_id is not null and seats_idx >= 25 and 66 >= seats_idx
+	</select>
+	<!-- 열람실 3번시간 사용가능한 죄석 -->
+	<select id="read_use_count3" resultType="int">
+		select count(*) from seats where t3_user_id is not null and seats_idx >= 25 and 66 >= seats_idx
+	</select>
+	<!-- 선택 좌석의 정보 가져오기 -->
+	<select id="seat_select" parameterType="int" resultType="seats">
+		select * from seats where seats_idx=#{seats_idx}
+	</select>
+	<!-- 동일 시간대의 다른좌석 중복예약 확인(9 - 12) -->
+	<select id="seat_time1_check" parameterType="String" resultType="int">
+		select count(*) from seats where t1_user_id=#{userID}
+	</select>
+	<!-- 동일 시간대의 다른좌석 중복예약 확인(12 - 15) -->
+	<select id="seat_time2_check" parameterType="String" resultType="int">
+		select count(*) from seats where t2_user_id=#{userID}
+	</select>
+	<!-- 동일 시간대의 다른좌석 중복예약 확인(15 - 18) -->
+	<select id="seat_time3_check" parameterType="String" resultType="int">
+		select count(*) from seats where t3_user_id=#{userID}
+	</select>
+	<!-- 선택 시간대별로 예약 진행(9 - 12) -->
+	<update id="room_time1_book" parameterType="java.util.HashMap">
+		update seats set t1_user_id=#{userID} where seats_idx=#{seats_idx}
+	</update>
+	<!-- 선택 시간대별로 예약 진행(12 - 15) -->
+	<update id="room_time2_book" parameterType="java.util.HashMap">
+		update seats set t2_user_id=#{userID} where seats_idx=#{seats_idx}
+	</update>
+	<!-- 선택 시간대별로 예약 진행(15 - 18) -->
+	<update id="room_time3_book" parameterType="java.util.HashMap">
+		update seats set t3_user_id=#{userID} where seats_idx=#{seats_idx}
+	</update>
+	
+ </mapper>

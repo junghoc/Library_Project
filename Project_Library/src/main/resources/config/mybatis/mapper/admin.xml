@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="admin">
+	
+	<!-- <0>공통사항 ================================================= -->
+	<!-- 아이디 중복체크 -->
+	<select id="id_check" parameterType="String" resultType="admin">
+		select * from admin where adminID=#{adminID}
+	</select>
+	<!-- 회원가입 -->
+	<insert id="admin_insert" parameterType="admin">
+		insert into admin values(
+			#{adminID},
+			#{adminPWD},
+			#{email},
+			#{adminName},
+			#{tell},
+			#{departmentNum},
+			'2',
+			'ROLE_ADMIN'
+		)
+	</insert>
+	<!-- 로그인 : 아이디체크 -->
+	<select id="login_id_check" parameterType="String" resultType="admin">
+		select * from admin where adminID=#{adminID} and ENABLED='1'
+	</select>
+
+	<!-- <1>관리자 ================================================= -->
+	<!-- 6. 직원관리 -->
+	<!-- 직원 리스트 가지고 오기 -->
+	<select id="admin_empl_list" resultType="admin">
+		select * from admin where departmentNum > 10
+	</select>
+	<!-- 직원 관리 승인 -->
+	<update id="admin_employee_approval" parameterType="String">
+		update admin set enabled='1' where adminID=#{adminID}
+	</update>
+	
+	
+ </mapper>

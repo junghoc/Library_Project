@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cart">
+	
+	<!-- <2>유저 =============================================================== -->
+	<!-- 1.장바구니(책 구매 예정)................................................. -->
+	<!-- 해당아이디의 cart정보 모두 가져오기 -->
+	<select id="user_sellbook_cart" parameterType="String" resultType="cart">
+		select * from cart where userID=#{userID} and cart_Check='2'
+	</select>
+	<!-- 해당아이디 cart의 총합구하기 -->
+	<select id="user_sellbook_cart_total" parameterType="String" resultType="int">
+		select NVL(sum(sellbook_Price * cart_Cnt),0) total from cart ca where userID=#{userID} and cart_Check='2'
+	</select>
+	<!-- 장바구니에 추가하기 -->
+	<insert id="sellbook_cart" parameterType="cart">
+		insert into cart values(
+			seq_cart_idx.nextval,
+			#{cart_Cnt},
+			#{sellbook_Isbn},
+			#{sellbook_Name},
+			#{sellbook_Price},
+			#{userID},
+			'2'
+		)
+	</insert>
+	<!-- 선택 판매책 수량 변경 -->
+	<update id="sellbook_cart_cnt" parameterType="cart">
+		update cart set cart_Cnt=#{cart_Cnt} where cart_idx=#{cart_idx}
+	</update>
+	<!-- 선택 판매책 삭제(update - 0) -->
+	<update id="sellbook_del" parameterType="int">
+		update cart set cart_Check='0' where cart_idx=#{cart_idx}
+	</update>
+	<!-- 다중삭제에서 실패한경우 다시 값 되돌리기 -->
+	<update id="sellbook_re" parameterType="int">
+		update cart set cart_Check='2' where cart_idx=#{cart_idx}
+	</update>
+	<!-- 선택 판매책 정보 가져오기 -->
+	<select id="sellbook_orders" parameterType="int" resultType="cart">
+		select * from cart where cart_idx=#{cart_idx}
+	</select>
+	<!-- 장바구니에서 구매완료한 제품 변경 -->
+	<update id="sellbook_order_end" parameterType="int">
+		update cart set cart_Check='1' where cart_idx=#{cart_idx}
+	</update>
+	
+	<!-- 2.마이페이지................................................. -->
+	<!-- 선택 주문 정보의 디테일(카트의정보)을 orders_idx를 통해 가져오기 -->
+	<select id="cart_list_idx" parameterType="int" resultType="cart">
+		select * from (select rank() over(order by O_DETAIL_IDX desc) no, d.* from
+		(select o.o_detail_idx, c.* from orders_detail o , cart c where o.order_idx = #{orders_idx} and o.cart_idx = c.cart_idx) d) 
+	</select>
+	
+ </mapper>

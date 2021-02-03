@@ -1,0 +1,118 @@
+html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, menu, nav, section, article, aside, dl, dt, dd, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption, em, i {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Titillium Web','Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: #555;
+}
+
+div {
+    display: block;
+}
+
+.d_width {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clear:after, .clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+}
+
+#content {
+    float: left;
+    width: 100%;
+    min-height: 760px;
+}
+
+.greeting {
+	width : 1030px;
+    position: relative;
+    padding: 30px 0 0 0;
+}
+
+.greeting .tit-wrap {
+    width: 50%;
+    word-break: keep-all;
+}
+
+.greeting .tit1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    margin: 0 0 10px 0;
+    letter-spacing: -2px;
+}
+
+.greeting .tit2 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #4995DB;
+    line-height: 1.2;
+    letter-spacing: -2.5px;
+    margin-top: 0;
+}
+
+.greeting .img-wrap {
+    position: relative;
+    padding: 60px;
+    background: #f3f3f3;
+    margin: 60px 0 0 0;
+}
+
+.greeting .img-wrap .img {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    border: 0;
+}
+
+.greeting .txt p:first-child {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.greeting .txt p:nth-child(2) {
+    margin: 30px 0 0 0;
+    font-size: 13px;
+    color: #555;
+    text-align: justify;
+}

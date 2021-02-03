@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="rent">
+	
+	<!-- <4>책 정보 =============================================================== -->
+	<!-- 1.선택도서 예약................................................. -->
+	<insert id="rentbook_reserve" parameterType="rent">
+		insert into rent values(
+			seq_rent_idx.nextval,
+			#{userID},
+			#{rentbook_Isbn},
+			#{rentbook_Name},
+			'2',
+			#{rent_Date},
+			#{rent_Redate},
+			'2'
+		)
+	</insert>
+	
+ </mapper>

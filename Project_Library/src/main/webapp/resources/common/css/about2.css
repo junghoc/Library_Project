@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif !important;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: NanumBarunGothic,sans-serif;
+    font-size: 14px;
+    -webkit-text-size-adjust: none;
+    color: #4d4d4d;
+    word-wrap: break-word;
+}
+
+section {
+    margin-top: 10px;
+    display: block;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+div, span, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+dl, dt, dd, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#divContents {
+    position: relative;
+    width: 1000px;
+    margin: 10px auto 0;
+}
+
+#divWrapper #divContent {
+    font-family: NanumBarunGothic,sans-serif;
+}
+
+#divContent {
+    min-height: 800px;
+    margin-top: 30px;
+}
+
+.guide {
+    margin-bottom: 100px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+
+.guide * {
+    box-sizing: content-box;
+}
+
+.guideContent {
+    margin-bottom: 35px;
+}
+
+.guideTitle1 {
+    margin-bottom: 10px;
+    padding: 5px 0 0 24px;
+    background: url('../../images/other/guideTitBg1.png') no-repeat 0 9px;
+    color: #2d2d2d;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.guide .point1 {
+    color: #fa4b4b;
+}
+
+span {
+    display: inline-block;
+}
+
+.guideList2 {
+    padding-left: 15px;
+}
+
+.guideList2 > li:first-child {
+    margin-top: 0;
+}
+
+.guide .marBot18 {
+    margin-bottom: 18px;
+}
+
+.guideList2 > li {
+    margin-top: 5px;
+    padding-left: 7px;
+    background: url('../../images/other/bullet2.gif') no-repeat 0 10px;
+    color: #646464;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a:visited {
+    color: #4c4c4c;
+}
+
+a:link {
+    color: #4c4c4c;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+.guide .marTop10 {
+    margin-top: 10px;
+}
+
+.guideTable2 table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 3px solid #6f7e8d;
+}
+
+caption {
+    position: static;
+    height: 0;
+}
+
+legend, caption, hr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.guide .wid30 {
+    width: 30%;
+}
+
+.guide .wid70 {
+    width: 70%;
+}
+
+.guideTable2 table tr {
+    border-left: 2px solid #fff;
+}
+
+.guideTable2 table thead th {
+    padding: 11px 20px;
+    background-color: #f1f5fa;
+    color: #eff8fc;
+    color: #000;
+    text-align: center;
+}
+
+.guideTable2 table th {
+    border-bottom: 1px solid #c5c8cf;
+    border-left: 1px solid #c5c8cf;
+    background: #f1f5fa;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.guideTable2 table td {
+    padding: 10px 20px;
+    border-bottom: 1px solid #c5c8cf;
+    border-left: 1px solid #c5c8cf;
+    color: #505050;
+    font-size: 15px;
+}
+
+.guide .marTop5 {
+    margin-top: 5px;
+}
+
+.guideList1 {
+    padding-left: 15px;
+}
+
+.guideList1 > li:first-child {
+    margin-top: 0;
+}
+
+.guideList1 > li {
+    margin-top: 5px;
+    padding-left: 7px;
+    background: url('../../images/other/bullet1.gif') no-repeat 0 10px;
+    color: #646464;
+    font-size: 15px;
+}
+
+.guideTable2 table tbody th {
+    padding: 8px 20px;
+    background-color: #f9f9f9;
+    color: #505050;
+    text-align: center;
+}
+
+.guideTable2 table td {
+    padding: 10px 20px;
+    border-bottom: 1px solid #c5c8cf;
+    border-left: 1px solid #c5c8cf;
+    color: #505050;
+    font-size: 15px;
+}
+
+.alignCenter {
+    text-align: center;
+}
+

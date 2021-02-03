@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="rentbook">
+	
+	<!-- <4>책 정보 =============================================================== -->
+	<!-- 1.대여책 전체 검색................................................. -->
+	<select id="rentbook_search" parameterType="java.util.HashMap" resultType="rentbook">
+		select * from (select rank() over(order by rentbook_Name) no, d.* from
+		(select * from rentbook) d ) where no between #{start} AND #{end}
+	</select>
+	<!-- 대여 책의 전체 갯수 -->
+	<select id="rentbook_count" resultType="int">
+		select count(*) from rentbook
+	</select>
+	<!-- 컬럼별 내용 선택 -->
+	<!-- 책이름 -->
+	<select id="rentbook_search_name" parameterType="java.util.HashMap" resultType="rentbook">
+		select * from (select rank() over(order by rentbook_Name) no, d.* from
+		(select * from rentbook where rentbook_Name like '%'||#{search}||'%') d ) where no between  #{start} AND #{end}
+	</select>
+	<!-- 카테고리 -->
+	<select id="rentbook_search_category" parameterType="java.util.HashMap" resultType="rentbook">
+		select * from (select rank() over(order by rentbook_Name) no, d.* from
+		(select * from rentbook where rentbook_Category like '%'||#{search}||'%') d ) where no between  #{start} AND #{end}
+	</select>
+	<!-- 출판사 -->
+	<select id="rentbook_search_company" parameterType="java.util.HashMap" resultType="rentbook">
+		select * from (select rank() over(order by rentbook_Name) no, d.* from
+		(select * from rentbook where rentbook_Company like '%'||#{search}||'%') d ) where no between  #{start} AND #{end}
+	</select>
+	<!-- 저자 -->
+	<select id="rentbook_search_author" parameterType="java.util.HashMap" resultType="rentbook">
+		select * from (select rank() over(order by rentbook_Name) no, d.* from
+		(select * from rentbook where rentbook_Author like '%'||#{search}||'%') d ) where no between  #{start} AND #{end}
+
+	</select>
+	<!-- 컬럼별 내용 검색의 대여책의 갯수 -->
+	<!-- 책이름 -->
+	<select id="rentbook_search_name_count" resultType="int" parameterType="String">
+		select count(*) from rentbook where rentbook_Name like '%'||#{search}||'%'
+	</select>
+	<!-- 책이름 -->
+	<select id="rentbook_search_category_count" resultType="int" parameterType="String">
+		select count(*) from rentbook where rentbook_Category like '%'||#{search}||'%'
+	</select>
+	<!-- 책이름 -->
+	<select id="rentbook_search_company_count" resultType="int" parameterType="String">
+		select count(*) from rentbook where rentbook_Company like '%'||#{search}||'%'
+	</select>
+	<!-- 책이름 -->
+	<select id="rentbook_search_author_count" resultType="int" parameterType="String">
+		select count(*) from rentbook where rentbook_Author like '%'||#{search}||'%'
+	</select>
+	<!-- 해당 책의 예약유무 변경 -->
+	<update id="rentbook_reserve" parameterType="String">
+		update rentbook set rentbook_Reserve = '0' where rentbook_Isbn=#{rentbook_Isbn}
+	</update>
+	<!-- 선택도서 조회수 증가 -->
+	<update id="rentbook_hits" parameterType="String">
+		update rentbook set rentbook_Hits = rentbook_Hits + 1 where rentbook_Isbn=#{rentbook_Isbn}
+	</update>
+	<!-- 선택 대여 도서 검색 -->
+	<select id="rentbook_view" parameterType="String" resultType="rentbook">
+		select * from rentbook where rentbook_Isbn=#{rentbook_Isbn}
+	</select>
+	<!-- 신규도서 안내(10권) -->
+	<select id="rentbook_new" resultType="rentbook">
+		select * from (select rank() over(order by rentbook_Receiving desc, rentbook_Year desc ) no, d.* from
+		(select * from rentbook) d ) where no between 1 and 10
+	</select>
+	
+ </mapper>

@@ -1,0 +1,1421 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body, table, tr, td, select, input {
+    font-family: "µ¸¿ò","verdana";
+    font-size: 9pt;
+    color: #555555;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+body, h1, h2, h3, h4, input, button {
+    font-family: '돋움',dotum,'Helvetica','Apple SD Gothic Neo',AppleGothic,sans-serif;
+    font-size: 12px;
+    color: #555;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+body {
+    background-color: #fff;
+    text-align: center;
+    *word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: grey;
+    font-variant: normal;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+input[type=button], input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password], input, button, textarea {
+    webkit-text-size-adjust: none;
+    -webkit-border-radius: 0;
+    border-width: 1px;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+input:not([type="image" i]) {
+    box-sizing: border-box;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+img, fieldset, iframe {
+    border: 0 none;
+}
+
+img {
+    vertical-align: top;
+}
+
+i, em, address {
+    font-style: normal;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+#wrapperContent:after {
+    content: '';
+    clear: both;
+    display: block;
+    vertical-align: ;
+}
+
+#wrapperContent {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.progbar {
+    margin: 16px 0 36px 0;
+    width: 960px;
+    float: left;
+}
+
+.progbar h1 {
+    float: left;
+    width: 300px;
+    height: 42px;
+    text-indent: -9999em;
+    background: url(http://image.yes24.com/sysimage/orderN/progress.gif) 0 0 no-repeat;
+}
+
+.chkpd_wTop {
+    clear: both;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 10px;
+}
+
+#wrapperContent .bw {
+    height: 20px;
+    display: inline-block;
+    background: url(http://image.yes24.com/sysimage/orderN/button.gif?ver=201123a) 0 0 no-repeat;
+    line-height: 60px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0 1px;
+}
+
+.bw {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+#wrapperContent .ordpd {
+    width: 76px;
+    background-position: 0 -30px;
+}
+
+#wrapperContent .pddel2 {
+    width: 57px;
+    background-position: 0 -270px;
+}
+
+.tbl_w {
+    clear: both;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.cartTopItem {
+    margin-bottom: 20px !important;
+}
+
+#wrapperContent table.tbl_l {
+    border-collapse: collapse;
+}
+
+.tbl_l {
+    width: 100%;
+}
+
+.tbl_l th {
+    padding: 0;
+    height: 24px;
+    vertical-align: top;
+    background: url(http://image.yes24.com/sysimage/common/bg/bg_th_blue.gif) repeat-x left top;
+}
+
+.tbl_l th {
+    overflow: hidden;
+}
+
+.tbl_l .chkbx {
+    margin: 0 0 0 10px;
+}
+
+.chkbx {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.tbl_l th .name {
+    background-position: 50% 0;
+}
+
+.tbl_l th em {
+    display: block;
+    margin-top: 7px;
+    height: 11px;
+    overflow: hidden;
+    text-indent: -999em;
+    vertical-align: top;
+    background: url(http://image.yes24.com/sysimage/orderN/item/item_order.gif) 0 0 no-repeat;
+}
+
+.tbl_l th .fpri {
+    background-position: 50% -20px;
+}
+
+.tbl_l th .spri {
+    margin: 7px auto 0;
+    width: 62px;
+    background-position: 50% -40px;
+}
+
+.tbl_l th .numb {
+    background-position: 50% -60px;
+}
+
+.tbl_l th .tota {
+    background-position: 50% -80px;
+}
+
+.tbl_l th .ddat {
+    background-position: 50% -100px;
+}
+
+.tbl_l th .orde {
+    background-position: 50% -120px;
+}
+
+.tbl_w {
+    clear: both;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.gen_2nd {
+    width: 102px;
+    background-position: 10px -720px;
+}
+
+.gendig .tbl_l {
+    border-top: 2px solid #979797;
+}
+
+.cb {
+    clear: both;
+}
+
+.tbl_l .cb {
+    vertical-align: top;
+}
+
+.tbl_l td {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    line-height: 1.4;
+    background: url(http://image.yes24.com/sysimage/orderN/dotline.gif) 0 bottom repeat-x;
+}
+
+.chkbx {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.tbl_l .chkbx {
+    margin: 0 0 0 10px;
+}
+
+.tbl_l .goods_img {
+    vertical-align: top;
+}
+
+.tbl_l td.goods_img a {
+    display: inline-block;
+    _display: block;
+    position: relative;
+}
+
+.tbl_l .pdimg {
+    float: left;
+    margin: 0 8px 0 0;
+    width: 60px;
+}
+
+.tbl_l .pd_a {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.tbl_l .le {
+    text-align: left;
+    vertical-align: top;
+    padding-left: 9px;
+    line-height: 18px;
+}
+
+.tbl_l .num {
+    width: 32px;
+    margin: 0 0 3px 0;
+    text-align: right;
+    padding: 2px 5px 0 0;
+}
+
+#wrapperContent .chgnum {
+    width: 32px;
+}
+
+.dvmsg {
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+}
+
+.tbl_l .goods_order {
+    vertical-align: top;
+}
+
+.ordbtnw a {
+    margin-bottom: 3px !important;
+}
+
+#wrapperContent .pddel {
+    width: 76px;
+    background-position: 0 -120px;
+}
+
+.tbl_l .tot {
+    text-align: right;
+    padding-right: 10px;
+    background: #f5f5f5 url(http://image.yes24.com/sysimage/common/ln/ln_gray_dark.gif) repeat-x left bottom;
+}
+
+.chkpd_w {
+    position: relative;
+    margin: -40px 0 25px 0;
+    padding: 9px 0 0 10px;
+}
+
+.calcTbArea {
+    position: relative;
+    margin-bottom: 20px;
+    border: solid 1px #9fc7e1;
+    background-color: #e6f0fa;
+}
+
+.calcTbArea table {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.calcTbArea caption {
+    display: none;
+}
+
+.calcTbArea thead th {
+    position: relative;
+    padding: 15px 0 5px 0;
+    line-height: 20px;
+    text-align: center;
+    background-color: #cae0f0;
+    color: #000;
+    border-right: solid 1px #cae0f0;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: '맑은 고딕','Malgun Gothic','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;
+}
+
+.calcTbArea .saleCol {
+    color: #3a85c8;
+    z-index: 2;
+}
+
+.calcTbArea .totalCol {
+    z-index: 3;
+}
+
+.calcTbArea .priceCol {
+    color: #a13b66;
+    background-color: #d4e3f1;
+}
+
+.calcTbArea .lastCol {
+    z-index: 1;
+    border-right: none;
+}
+
+.calcTbArea tbody td {
+    position: relative;
+    z-index: 21;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #cae0f0;
+    font-weight: bold;
+    color: #000;
+    border-right: solid 1px #cae0f0;
+}
+
+.yes_b {
+    font-family: 'yesB' !important;
+    font-weight: normal !important;
+}
+
+.calcTbArea tbody td .yes_b {
+    font-size: 24px;
+    vertical-align: -2px;
+    letter-spacing: -1px;
+}
+
+.calcTbArea .icon_settle {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -30px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-indent: 999em;
+    background: url(http://image.yes24.com/sysimage/orderN/icon_settle.png) 0 0;
+}
+
+.calcTbArea .icon_settle.ico_settle_plus {
+    background-position: 0 0;
+}
+
+.calcTbArea .icon_settle.ico_settle_minus {
+    background-position: 0 -30px;
+}
+
+.calcTbArea .icon_settle.ico_settle_equal {
+    background-position: 0 -60px;
+}
+
+.dlvifo_w {
+    margin-top: 25px;
+    width: 958px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    background: url(http://image.yes24.com/sysimage/orderN/bg_dlvifo.gif) 0 0 repeat-y;
+}
+
+.dlvifo_tw {
+    width: 110px;
+    background: #f5f5f5;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+
+.dlvifo_t {
+    text-indent: -9999em;
+    background: url(http://image.yes24.com/sysimage/orderN/title.gif) 0 -80px no-repeat;
+    width: 73px;
+    height: 15px;
+    margin: 0 0 5px 8px;
+}
+
+.dlv_w {
+    margin: 20px 20px 15px 150px;
+}
+
+.dlv_w h4 {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 0 15px 0;
+}
+
+#wrapperContent .chgdlv {
+    width: 63px;
+    height: 14px;
+    background-position: 0 -360px;
+}
+
+.btn_area {
+    position: relative;
+    clear: both;
+    text-align: center;
+    padding: 37px 0;
+}
+
+div {
+    display: block;
+}
+
+label, button {
+    cursor: pointer;
+}
+
+select {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+strong {
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body, table, tr, td, select, input {
+    font-family: 돋움, verdana;
+    font-size: 9pt;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+body, h1, h2, h3, h4, input, button {
+    font-family: '돋움',dotum,'Helvetica','Apple SD Gothic Neo',AppleGothic,sans-serif;
+    font-size: 12px;
+    color: #555;
+}
+
+body {
+    background-color: #fff;
+    text-align: center;
+    *word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+body, th, td, input {
+    font-size: 12px;
+    font-family: Dotum,돋움,AppleGothic,serif;
+    color: #333;
+}
+
+i, em, address {
+    font-style: normal;
+}
+
+img, fieldset, iframe {
+    border: 0 none;
+}
+
+img {
+    vertical-align: top;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+input[type=button], input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password], input, button, textarea {
+    webkit-text-size-adjust: none;
+    -webkit-border-radius: 0;
+    border-width: 1px;
+}
+
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: radio;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+#wrapperContent:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#wrapperContent {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.progbar {
+    margin: 16px 0 36px 0;
+    width: 960px;
+    float: left;
+}
+
+.progbar {
+    position: relative;
+    text-align: left;
+}
+
+.progbar h1 {
+    float: left;
+    width: 300px;
+    height: 42px;
+    text-indent: -9999em;
+    background: url(https://secimage.yes24.com/sysimage/orderN/progress.gif) 0 0 no-repeat;
+}
+
+.progbar .pay {
+    background-position: 0 -100px;
+}
+
+#wrapperContent table.tbl_l {
+    border-collapse: collapse;
+}
+
+.tbl_l {
+    width: 100%;
+}
+
+.fns_tbl_l {
+    border-bottom: 1px solid #979797;
+}
+
+.tbl_l th {
+    padding: 0;
+    height: 24px;
+    vertical-align: top;
+    background: url(https://secimage.yes24.com/sysimage/common/bg/bg_th_blue.gif) repeat-x left top;
+}
+
+.tbl_l th {
+    overflow: hidden;
+}
+
+.fns_tbl_l th {
+    background: #f5f5f5;
+    border-top: 2px solid #979797;
+    border-bottom: 1px solid #979797;
+}
+
+.tbl_l th em {
+    display: block;
+    margin-top: 7px;
+    height: 11px;
+    overflow: hidden;
+    text-indent: -999em;
+    vertical-align: top;
+    background: url(https://secimage.yes24.com/sysimage/orderN/item/item_order.gif) 0 0 no-repeat;
+}
+
+.fns_tbl_l th .name {
+    background-position: 50% -250px;
+}
+
+.fns_tbl_l th .fpri {
+    background-position: 50% -770px;
+}
+
+.tbl_l th .spri {
+    margin: 7px auto 0;
+    width: 62px;
+    background-position: 50% -40px;
+}
+
+.fns_tbl_l th .spri {
+    background-position: 50% -790px;
+}
+
+.fns_tbl_l th .numb {
+    background-position: 50% -410px;
+}
+
+.fns_tbl_l th .tota {
+    background-position: 50% -810px;
+}
+
+.tbl_l th .ddat {
+    background-position: 50% -100px;
+}
+
+.last {
+    background: none !important;
+    border: 0;
+}
+
+.tbl_l .le {
+    text-align: left;
+    vertical-align: top;
+    padding-left: 9px;
+    line-height: 18px;
+}
+
+.tbl_l td {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    line-height: 1.4;
+    background: url(https://secimage.yes24.com/sysimage/orderN/dotline.gif) 0 bottom repeat-x;
+}
+
+.tbl_l .last td {
+    background: none;
+}
+
+.tbl_l .goods_img {
+    vertical-align: top;
+}
+
+.tbl_l td.goods_img a {
+    display: inline-block;
+    _display: block;
+    position: relative;
+}
+
+.tbl_l .pd_a {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.tbl_l .pdimg02 {
+    float: left;
+    margin: 0 8px 0 0;
+    width: 70px;
+}
+
+.dvmsg {
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+}
+
+.dlvifo_w2 {
+    width: 958px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    background: url(https://secimage.yes24.com/sysimage/orderN/bg_dlvifo2.gif) 0 0 repeat-y;
+    border: 0;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.dlvifo_w2.dbr_none {
+    border-top: none;
+}
+
+.dlvifo_tw {
+    width: 110px;
+    background: #f5f5f5;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+
+.dlvifo_w2 .dlvifo_tw {
+    width: 60px;
+    padding: 20px 0 0 10px;
+}
+
+.dlvifo_t {
+    text-indent: -9999em;
+    background: url(https://secimage.yes24.com/sysimage/orderN/title.gif) 0 -80px no-repeat;
+    width: 73px;
+    height: 15px;
+    margin: 0 0 5px 8px;
+}
+
+.dlvifo_w2 .dlvifo_t {
+    width: 41px;
+}
+
+.dlvifo_w2 .dlv_w {
+    margin: 20px 20px 15px 100px;
+}
+
+.dlv_l {
+    float: left;
+    margin: 0 0 5px 0;
+}
+
+.dlv_l li {
+    float: left;
+    padding: 0 0 6px 14px;
+    background: url(https://secimage.yes24.com/sysimage/common/bl/bl_rnd_gray.gif) 4px 4px no-repeat;
+}
+
+.dlv_w .dlv_l li {
+    width: 760px;
+}
+
+.noti {
+    clear: both;
+    background: url(/sysimage/orderN/icon.gif) 0 -218px no-repeat;
+    padding: 1px 0 0 18px;
+    color: #2063aa;
+}
+
+.noti {
+    padding: 0 0 0 18px;
+    clear: both;
+    line-height: 1.5em;
+    font-size: 12px;
+    background: url(https://secimage.yes24.com/sysimage/orderN/icon.gif) 0 -218px no-repeat !important;
+    color: #2063AA;
+}
+
+.dlv_w .noti {
+    display: inline-block;
+    clear: both;
+    margin: 0 !important;
+    padding: 1px 0 2px 20px;
+}
+
+.dlv_w .noti {
+    display: block;
+}
+
+.mgt10 {
+    margin-top: 10px !important;
+}
+
+.info_w {
+    clear: both;
+    margin: 0 0 20px 0;
+}
+
+.info_w li {
+    padding: 3px 0 6px 14px;
+    background: url(https://secimage.yes24.com/sysimage/orderN/dot1.gif) 4px 8px no-repeat;
+}
+
+.mgb0 {
+    margin-bottom: 0px !important;
+}
+
+.calcTbArea {
+    position: relative;
+    margin-bottom: 20px;
+    border: solid 1px #9fc7e1;
+    background-color: #e6f0fa;
+}
+
+.calcTbArea table {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.calcTbArea thead th {
+    position: relative;
+    padding: 15px 0 5px 0;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    border-right: solid 1px #cae0f0;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: '맑은 고딕','Malgun Gothic','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;
+}
+
+.calcTbArea .saleCol {
+    color: #3a85c8;
+}
+
+.calcTbArea tbody td {
+    position: relative;
+    z-index: 21;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    border-right: solid 1px #cae0f0;
+}
+
+.calcTbArea tbody td .yes_b {
+    font-size: 24px;
+    vertical-align: -2px;
+    letter-spacing: -1px;
+}
+
+.yes_b {
+    font-family: 'yesB' !important;
+    font-weight: normal !important;
+}
+
+.calcTbArea .icon_settle {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -30px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-indent: 999em;
+    background: url(https://secimage.yes24.com/sysimage/orderN/icon_settle.png) 0 0;
+}
+
+.calcTbArea .calcTotBox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 318px;
+    height: 100%;
+    text-align: center;
+    background-color: #d4e3f1;
+}
+
+.calcTbArea .calcTotBox .calcTotBoxTb {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.calcTbArea .calcTotBox .calcTotBoxTb .calcTotBoxCell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.calcTbArea .calcTotBox .calcTotBoxTb .calcTotBoxCell .cell_tit {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a13b66;
+    font-family: '맑은 고딕','Malgun Gothic','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;
+}
+
+.calcTbArea .calcTotBox .calcTotBoxTb .calcTotBoxCell .cell_price {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #a13b66;
+}
+
+.calcTbArea .calcTotBox .calcTotBoxTb .calcTotBoxCell .cell_price .yes_b {
+    font-size: 40px;
+    vertical-align: -3px;
+}
+
+.calcTbArea .icon_settle.ico_settle_plus {
+    background-position: 0 0;
+}
+
+.calcTbArea .icon_settle.ico_settle_minus {
+    background-position: 0 -30px;
+}
+
+.calcTbArea .icon_settle.ico_settle_equal {
+    background-position: 0 -60px;
+}
+
+.pay_w {
+    float: right;
+    margin: 0 0 40px 0;
+}
+
+.tbl_t {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.tbl_t {
+    margin: 0 0 10px 0;
+    height: 17px;
+    overflow: hidden;
+    line-height: 150px;
+    vertical-align: middle;
+    background: url(https://secimage.yes24.com/sysimage/orderN/title.gif) 10px 0 no-repeat;
+}
+
+.dlv_address {
+    width: 83px;
+    background-position: 10px -200px;
+}
+
+.col2 {
+    width: 960px;
+    background: url(https://secimage.yes24.com/sysimage/orderN/bg_2col.gif) 0 0 repeat-y;
+    border-top: 2px solid #979797;
+    border-bottom: 1px solid #979797;
+    padding: 15px 0 0 0;
+    position: relative;
+    float: right;
+}
+
+.inf_mem {
+    width: 300px;
+    float: right;
+    padding: 0 0 5px 0;
+}
+
+.inf_mem .tbl_t {
+    width: 61px;
+    height: 13px;
+    background-position: 10px -220px;
+}
+
+.inf_mem .tbl_pay {
+    width: 280px;
+    border-top: 1px solid #e6e6e6;
+    margin: 0 0 10px 0;
+}
+
+.tbl_pay th {
+    width: 95px;
+    color: #3a85c8;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tbl_pay th, .tbl_pay td {
+    padding: 5px 0 10px 15px;
+    line-height: 1.3;
+}
+
+.inf_mem th {
+    width: 65px;
+    padding: 13px 0 0 10px;
+}
+
+.inf_mem td {
+    padding: 10px 0 0 10px;
+}
+
+.ipubx {
+    border: 1px solid #c1c1c1;
+    width: 100px;
+    height: 20px;
+    padding: 3px 3px 0 3px;
+    vertical-align: middle;
+}
+
+.num_p .ipubx {
+    width: 43px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.eml_w .ipubx {
+    width: 190px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tbl_pay {
+    width: 640px;
+}
+
+.dlv_mtd .rdb_w {
+    padding: 3px 0 0 0;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.rdbtn {
+    width: 13px;
+    height: 13px;
+    vertical-align: top;
+}
+
+.scard_w {
+    width: 620px;
+    border-top: 1px solid #d7d7d7;
+    padding: 15px 0 5px 0;
+}
+
+.scard_w .tbl_pay {
+    width: 620px;
+}
+
+.tbl_pay .rdb_w {
+    padding: 3px 0 0 0;
+}
+
+.dlv_adrs .rdb_w {
+    display: inline-block;
+    margin: 0 35px 0 0;
+}
+
+#wrapperContent .bw {
+    height: 20px;
+    display: inline-block;
+    background: url(https://image.yes24.com/sysimage/orderN/button.gif?ver=201123a) 0 0 no-repeat;
+    line-height: 60px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0 1px;
+}
+
+#wrapperContent .sch_address {
+    width: 58px;
+    background-position: -133px -840px;
+}
+
+.nt {
+    background: 6px 4px no-repeat;
+    margin: 5px 0 0 0;
+    padding: 1px 0 0 12px;
+    color: #999;
+    letter-spacing: -1px;
+    font-size: 11px;
+    vertical-align: middle;
+    line-height: 16px !important;
+}
+
+.paym_t {
+    width: 83px;
+    background-position: 10px -240px;
+}
+
+.added_w {
+    float: right;
+    width: 319px;
+}
+
+.added {
+    margin: 0 0 10px 17px;
+    width: 300px;
+}
+
+.added .tbl_pay {
+    margin: 0 0 10px 0;
+    width: 280px;
+}
+
+.added th {
+    padding: 13px 0 0 10px;
+    width: 65px;
+}
+
+.added td {
+    padding: 10px 0 0 10px;
+}
+
+.added .rdb_w {
+    width: 70px;
+}
+
+.info11 {
+    font-size: 11px;
+    color: #888;
+    letter-spacing: -1px;
+}
+
+.added .info11 {
+    display: inline-block;
+    line-height: 14px !important;
+    margin: 5px 0 0 0;
+}
+
+.final_pay {
+    clear: both;
+    position: relative;
+    z-index: 1;
+    padding: 25px 0 0 30px;
+    background: #e6f0fa;
+    height: 43px;
+    border-bottom: 1px solid #9fc7e1;
+}
+
+.final_pay .prc_t {
+    display: block;
+    text-indent: -9999em;
+    width: 80px;
+    height: 14px;
+    background: #e6f0fa url(https://secimage.yes24.com/sysimage/orderN/title.gif) 0 -260px no-repeat;
+}
+
+.final_pay .prc {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-weight: bold;
+    color: #a13b66;
+}
+
+.final_pay .prc em {
+    font: bold 24px verdana;
+    letter-spacing: -2px;
+}
+
+.agree_pay {
+    padding: 20px 10px 0 30px;
+}
+
+.agree_pay .txt_agtee_pay {
+    margin: 0 0 10px 0;
+    color: #888;
+}
+
+.chkbx {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.btn_area {
+    position: relative;
+    clear: both;
+    text-align: center;
+    padding: 37px 0;
+}
+
+.added_w .btn_area {
+    position: relative;
+}
+
+.settleTpArea {
+    margin-top: -15px;
+    width: 640px;
+}
+
+.settleTpArea .settleTpGrp {
+    border-bottom: solid 1px #d8d8d8;
+    background-color: #fff;
+}
+
+.settleTpArea .settleTpGrp .settleTpGrp_tit {
+    background-color: #e6f0fa;
+}
+
+.settleTpArea .settleTpGrp .settleTpGrp_tit label {
+    position: relative;
+    display: block;
+    padding: 10px 0 10px 19px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.settleTpArea .settleTpGrp .settleTpGrp_tit label .settleTpTxt {
+    color: #333;
+    font-size: 14px;
+    vertical-align: -3px;
+    font-weight: bold;
+}
+
+.settleTpArea .settleTpGrp .settleTpGrp_cont {
+    display: none;
+    position: relative;
+    background-color: #fff;
+}
+
+.settleTpArea .settleTpGrp.selectOn .settleTpGrp_cont {
+    display: block;
+}
+
+.settleTpArea + .scard_w {
+    border-top: none;
+}
+
+.smsg_l li {
+    background: url(https://secimage.yes24.com/sysimage/orderN/dot3.gif) 0 5px no-repeat;
+    padding: 0 0 0 7px;
+    margin: 0 0 3px 0;
+}

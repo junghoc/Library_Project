@@ -1,0 +1,281 @@
+html, body, h1, h2, h3, h4, h5, h6, div, p, blockquote, pre, code, address, ul, ol, li, menu, nav, section, article, aside, dl, dt, dd, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption, em, i {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+a {
+    transition: all ease-out 0.2s;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #525252;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit !important;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    font-family: 'Titillium Web','Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    color: #555;
+}
+
+.fa, .fas {
+    font-weight: 900;
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-user:before {
+    content: "\f007";
+}
+
+.d_width {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.btn-d {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    cursor: pointer !important;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.btn-d {
+    display: inline-block;
+    *zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #768395;
+    background-color: #768395;
+    font-size: 0.875rem;
+    color: #fff !important;
+    padding: 0 15px;
+    line-height: 38px;
+}
+
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clear:after, .clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    float: none;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#content {
+    float: left;
+    width: 100%;
+    min-height: 760px;
+}
+
+#loginwrap {
+    background: #f7f7f7;
+    padding: 80px;
+    text-align: center;
+}
+
+#loginwrap .tit-wrap {
+    margin-bottom: 50px;
+}
+
+#loginwrap .tit-wrap .tit {
+    font-size: 40px;
+    color: #333;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 0 0 15px;
+}
+
+#loginwrap .tit-wrap .tit span {
+    font-size: 15px;
+    color: #4893DD;
+    display: block;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+#loginwrap .cont {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#loginwrap .input-wrap {
+    position: relative;
+    padding-right: 120px;
+}
+
+#loginwrap .input-wrap p:nth-of-type(1) {
+    border-top: 1px solid #DCDCDC;
+}
+
+#loginwrap .input-wrap p {
+    border-bottom: 1px solid #DCDCDC;
+}
+
+#loginwrap .input-wrap p:after {
+    content: "";
+    display: block;
+    float: none;
+    clear: both;
+}
+
+#loginwrap .input-wrap i {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 49px;
+    background: #F1F1F1;
+    text-align: center;
+    line-height: 50px;
+    color: #B7B7B7;
+}
+
+#loginwrap .input-wrap input {
+    display: block;
+    float: left;
+    width: calc(100% - 50px);
+    height: 49px;
+    border: none;
+    padding: 0 20px;
+    transition: all 0.2s ease-out;
+}
+
+#loginwrap .btn-login {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 100px;
+    height: 100%;
+    line-height: 96px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#loginwrap .login-guide {
+    margin: 60px 0 0 0;
+}
+
+#loginwrap .login-guide p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+#loginwrap .login-guide a {
+    display: inline-block;
+    color: #768395;
+    margin-left: 20px;
+    text-decoration: underline;
+}

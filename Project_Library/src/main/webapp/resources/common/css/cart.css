@@ -1,0 +1,594 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body, table, tr, td, select, input {
+    font-family: "µ¸¿ò","verdana";
+    font-size: 9pt;
+    color: #555555;
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+body, h1, h2, h3, h4, input, button {
+    font-family: '돋움',dotum,'Helvetica','Apple SD Gothic Neo',AppleGothic,sans-serif;
+    font-size: 12px;
+    color: #555;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    margin-block-end: 1em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+body {
+    background-color: #fff;
+    text-align: center;
+    *word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: grey;
+    font-variant: normal;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+input[type=button], input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password], input, button, textarea {
+    webkit-text-size-adjust: none;
+    -webkit-border-radius: 0;
+    border-width: 1px;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+input:not([type="image" i]) {
+    box-sizing: border-box;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+img, fieldset, iframe {
+    border: 0 none;
+}
+
+img {
+    vertical-align: top;
+}
+
+i, em, address {
+    font-style: normal;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+#wrapperContent:after {
+    content: '';
+    clear: both;
+    display: block;
+    vertical-align: ;
+}
+
+#wrapperContent {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.progbar {
+    margin: 16px 0 36px 0;
+    width: 960px;
+    float: left;
+}
+
+.progbar h1 {
+    float: left;
+    width: 300px;
+    height: 42px;
+    text-indent: -9999em;
+    background: url(http://image.yes24.com/sysimage/orderN/progress.gif) 0 0 no-repeat;
+}
+
+.chkpd_wTop {
+    clear: both;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding: 0 0 0 10px;
+}
+
+#wrapperContent .bw {
+    height: 20px;
+    display: inline-block;
+    background: url(http://image.yes24.com/sysimage/orderN/button.gif?ver=201123a) 0 0 no-repeat;
+    line-height: 60px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 0 1px;
+}
+
+.bw {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+#wrapperContent .ordpd {
+    width: 76px;
+    background-position: 0 -30px;
+}
+
+#wrapperContent .pddel2 {
+    width: 57px;
+    background-position: 0 -270px;
+}
+
+.tbl_w {
+    clear: both;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.cartTopItem {
+    margin-bottom: 20px !important;
+}
+
+#wrapperContent table.tbl_l {
+    border-collapse: collapse;
+}
+
+.tbl_l {
+    width: 100%;
+}
+
+.tbl_l th {
+    padding: 0;
+    height: 24px;
+    vertical-align: top;
+    background: url(http://image.yes24.com/sysimage/common/bg/bg_th_blue.gif) repeat-x left top;
+}
+
+.tbl_l th {
+    overflow: hidden;
+}
+
+.tbl_l .chkbx {
+    margin: 0 0 0 10px;
+}
+
+.chkbx {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.tbl_l th .name {
+    background-position: 50% 0;
+}
+
+.tbl_l th em {
+    display: block;
+    margin-top: 7px;
+    height: 11px;
+    overflow: hidden;
+    text-indent: -999em;
+    vertical-align: top;
+    background: url(http://image.yes24.com/sysimage/orderN/item/item_order.gif) 0 0 no-repeat;
+}
+
+.tbl_l th .fpri {
+    background-position: 50% -20px;
+}
+
+.tbl_l th .spri {
+    margin: 7px auto 0;
+    width: 62px;
+    background-position: 50% -40px;
+}
+
+.tbl_l th .numb {
+    background-position: 50% -60px;
+}
+
+.tbl_l th .tota {
+    background-position: 50% -80px;
+}
+
+.tbl_l th .ddat {
+    background-position: 50% -100px;
+}
+
+.tbl_l th .orde {
+    background-position: 50% -120px;
+}
+
+.tbl_w {
+    clear: both;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.gen_2nd {
+    width: 102px;
+    background-position: 10px -720px;
+}
+
+.gendig .tbl_l {
+    border-top: 2px solid #979797;
+}
+
+.cb {
+    clear: both;
+}
+
+.tbl_l .cb {
+    vertical-align: top;
+}
+
+.tbl_l td {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    line-height: 1.4;
+    background: url(http://image.yes24.com/sysimage/orderN/dotline.gif) 0 bottom repeat-x;
+}
+
+.chkbx {
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+.tbl_l .chkbx {
+    margin: 0 0 0 10px;
+}
+
+.tbl_l .goods_img {
+    vertical-align: top;
+}
+
+.tbl_l td.goods_img a {
+    display: inline-block;
+    _display: block;
+    position: relative;
+}
+
+.tbl_l .pdimg {
+    float: left;
+    margin: 0 8px 0 0;
+    width: 60px;
+}
+
+.tbl_l .pd_a {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.tbl_l .le {
+    text-align: left;
+    vertical-align: top;
+    padding-left: 9px;
+    line-height: 18px;
+}
+
+.tbl_l .num {
+    width: 32px;
+    margin: 0 0 3px 0;
+    text-align: right;
+    padding: 2px 5px 0 0;
+}
+
+#wrapperContent .chgnum {
+    width: 32px;
+}
+
+.dvmsg {
+    margin: 0 0 6px 0;
+    line-height: 1.4;
+}
+
+.tbl_l .goods_order {
+    vertical-align: top;
+}
+
+.ordbtnw a {
+    margin-bottom: 3px !important;
+}
+
+#wrapperContent .pddel {
+    width: 76px;
+    background-position: 0 -120px;
+}
+
+.tbl_l .tot {
+    text-align: right;
+    padding-right: 10px;
+    background: #f5f5f5 url(http://image.yes24.com/sysimage/common/ln/ln_gray_dark.gif) repeat-x left bottom;
+}
+
+.chkpd_w {
+    position: relative;
+    margin: -40px 0 25px 0;
+    padding: 9px 0 0 10px;
+}
+
+.calcTbArea {
+    position: relative;
+    margin-bottom: 20px;
+    border: solid 1px #9fc7e1;
+    background-color: #e6f0fa;
+}
+
+.calcTbArea table {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.calcTbArea caption {
+    display: none;
+}
+
+.calcTbArea thead th {
+    position: relative;
+    padding: 15px 0 5px 0;
+    line-height: 20px;
+    text-align: center;
+    background-color: #cae0f0;
+    color: #000;
+    border-right: solid 1px #cae0f0;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: '맑은 고딕','Malgun Gothic','Apple SD Gothic Neo',AppleGothic,'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;
+}
+
+.calcTbArea .saleCol {
+    color: #3a85c8;
+    z-index: 2;
+}
+
+.calcTbArea .totalCol {
+    z-index: 3;
+}
+
+.calcTbArea .priceCol {
+    color: #a13b66;
+    background-color: #d4e3f1;
+}
+
+.calcTbArea .lastCol {
+    z-index: 1;
+    border-right: none;
+}
+
+.calcTbArea tbody td {
+    position: relative;
+    z-index: 21;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #cae0f0;
+    font-weight: bold;
+    color: #000;
+    border-right: solid 1px #cae0f0;
+}
+
+.yes_b {
+    font-family: 'yesB' !important;
+    font-weight: normal !important;
+}
+
+.calcTbArea tbody td .yes_b {
+    font-size: 24px;
+    vertical-align: -2px;
+    letter-spacing: -1px;
+}
+
+.calcTbArea .icon_settle {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -30px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-indent: 999em;
+    background: url(http://image.yes24.com/sysimage/orderN/icon_settle.png) 0 0;
+}
+
+.calcTbArea .icon_settle.ico_settle_plus {
+    background-position: 0 0;
+}
+
+.calcTbArea .icon_settle.ico_settle_minus {
+    background-position: 0 -30px;
+}
+
+.calcTbArea .icon_settle.ico_settle_equal {
+    background-position: 0 -60px;
+}
+
+.dlvifo_w {
+    margin-top: 25px;
+    width: 958px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    background: url(http://image.yes24.com/sysimage/orderN/bg_dlvifo.gif) 0 0 repeat-y;
+}
+
+.dlvifo_tw {
+    width: 110px;
+    background: #f5f5f5;
+    padding: 20px 0 0 20px;
+    float: left;
+}
+
+.dlvifo_t {
+    text-indent: -9999em;
+    background: url(http://image.yes24.com/sysimage/orderN/title.gif) 0 -80px no-repeat;
+    width: 73px;
+    height: 15px;
+    margin: 0 0 5px 8px;
+}
+
+.dlv_w {
+    margin: 20px 20px 15px 150px;
+}
+
+.dlv_w h4 {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #d7d7d7;
+    margin: 0 0 15px 0;
+}
+
+#wrapperContent .chgdlv {
+    width: 63px;
+    height: 14px;
+    background-position: 0 -360px;
+}
+
+.btn_area {
+    position: relative;
+    clear: both;
+    text-align: center;
+    padding: 37px 0;
+}
